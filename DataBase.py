@@ -127,23 +127,19 @@ class DB_model:
             self.disconnect(commit=True)
 
 
+    def insert_data_interactive(self):
 
+        while True:
+            bacteria_name = input("What is the bacteria's name? ")
+            antibiotic_name = input("what is the antibiotic's name? ")
+            resistance_max_value = float(input("Please enter the resistance max value: "))
+            susceptible_min_value = float(input("Please enter the min value for susceptibility: "))
+            self.insert_resistance_threshold(bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
 
-
-db_info = {
-    "host": "localhost",
-    "user": "root",
-    "password": "root123",
-    "database": "disk_database"
-}
-
-
-# bacteria_name = input("What is the bacteria's name? ")
-# antibiotic_name = input("what is the antibiotic's name? ")
-# resistance_max_value = float(input("Please enter the resistance max value: "))
-# susceptible_min_value = float(input("Please enter the min value for susceptibility: "))
-#
-# db.insert_resistance_threshold(bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
+            continue_entry = input("Do you want to enter another row? (yes/no): ".strip().lower())
+            if continue_entry in ["no", "n"]:
+                print("Data entry terminated.")
+                break
 
 
 
