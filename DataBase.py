@@ -37,10 +37,10 @@ class DB_model:
 
         try:
             self.mydb = mysql.connector.connect(
-                host = db_info["host"],
-                user = db_info["user"],
-                password = db_info["password"],
-                database = db_info["database"]
+                host = self.db_info["host"],
+                user = self.db_info["user"],
+                password = self.db_info["password"],
+                database = self.db_info["database"]
             )
             self.cursor = self.mydb.cursor()
             print("Successfully connected to the database.")
