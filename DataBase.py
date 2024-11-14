@@ -11,6 +11,27 @@ class DB_model:
         self.mydb = None
         self.cursor = None
 
+
+    def create_database_if_not_exists(self):
+
+        temp_db = mysql.connector.connect(
+            host=self.db_info["host"],
+            user = self.db_info["user"],
+            password = self.db_info["password"]
+        )
+        temp_cursor = temp_db.cursor()
+
+        # crating the database if it doesn't exist
+        try:
+            temp_cursor.execute(f"CREATE DATABASE IF NOT EXISTS {self.db_info['database']}")
+            print(f"Database'{self.db_info['database']}' checked/created")
+        except mysql.connector.errors as err:
+            print(f"Error creating database: {err}")
+
+        finally:
+            temp_cursor.close()
+            temp_db.close()
+
     def connect(self):
         try:
             self.mydb = mysql.connector.connect(
