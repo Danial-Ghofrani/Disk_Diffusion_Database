@@ -33,10 +33,12 @@ class DB_model:
             temp_db.close()
 
     def connect(self):
+        self.create_database_if_not_exists()
+
         try:
             self.mydb = mysql.connector.connect(
                 host = db_info["host"],
-                user = db_info["root"],
+                user = db_info["user"],
                 password = db_info["password"],
                 database = db_info["database"]
             )
@@ -55,7 +57,7 @@ class DB_model:
             self.mydb.close()
         print("Disconnected from the database.")
 
-    def calssify_mic_value(self, bacteria_name, antibiotic_name, mic_value):
+    def classify_mic_value(self, bacteria_name, antibiotic_name, mic_value):
 
         self.connect()
 
@@ -93,7 +95,7 @@ class DB_model:
         return result is not None
 
     def insert_resistance_threshold(self, bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value):
-        self.coonect()
+        self.connect()
         try:
             if not self.table_exists("resistance_thresholds"):
                 print("Table 'resistance_thresholds' does not exist. Creating the table.")
@@ -109,7 +111,10 @@ class DB_model:
                 self.cursor.execute(create_table_query)
 
             insert_query = """
-            INSERT INTO resitance_thresholds (bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
+          
+          
+          
+            INSERT INTO resistance_thresholds (bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
             VALUES (%s, %s, %s, %s)
             """
             self.cursor.execute(insert_query,(bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value))
@@ -132,15 +137,13 @@ db_info = {
     "database": "disk_database"
 }
 
-anti_biotic_db = DB_model(db_info)
 
-bacteria_name = input("What is the bacteria's name? ")
-antibiotic_name = input("what is the antibiotic's name? ")
-resistance_max_value = float(input("Please enter the resistance max value: "))
-susceptible_min_value = float(input("Please enter the min value for susceptibility"))
-
-anti_biotic_db.insert_resistance_threshold(bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
-
+# bacteria_name = input("What is the bacteria's name? ")
+# antibiotic_name = input("what is the antibiotic's name? ")
+# resistance_max_value = float(input("Please enter the resistance max value: "))
+# susceptible_min_value = float(input("Please enter the min value for susceptibility: "))
+#
+# db.insert_resistance_threshold(bacteria_name, antibiotic_name, resistance_max_value, susceptible_min_value)
 
 
 
