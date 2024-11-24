@@ -8,8 +8,9 @@ db_info = {
 }
 
 db = DB_model(db_info)
+
 db.insert_data_interactive()
 
 
 
-# print(db.classify_mic_value("e.coli", "ampicillin", 15))
+# print(db.classify_mic_value("Salmonella", "Ampicillin", 11))
