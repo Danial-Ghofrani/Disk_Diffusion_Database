@@ -54,47 +54,78 @@ class DB_model:
         self.connect()
 
         try:
-            # Truncate the MIC value to an integer
-            mic_value = int(mic_value)
-
+            # Query to fetch all rows matching the given bacteria and antibiotic
             query = """
             SELECT 
                 s_value, r_value, 
                 i_min, i_max, 
-                sdd_min, sdd_max
+                sdd_min, sdd_max,
+                indications
             FROM resistance_thresholds
             WHERE bacteria_name = %s AND antibiotic_name = %s;
             """
             self.cursor.execute(query, (bacteria_name, antibiotic_name))
-            result = self.cursor.fetchone()
+            results = self.cursor.fetchall()
 
-            if not result:
+            if not results:
                 return "No data found for the specified bacteria and antibiotic combination."
 
-            s_value, r_value, i_min, i_max, sdd_min, sdd_max = result
+            # Collect all unique indications from matching rows
+            indications_set = set()
+            thresholds = []
+            for row in results:
+                s_value, r_value, i_min, i_max, sdd_min, sdd_max, indications = row
+                thresholds.append((s_value, r_value, i_min, i_max, sdd_min, sdd_max))
+                if indications:
+                    indications_list = [ind.strip() for ind in indications.split(",")]
+                    indications_set.update(indications_list)
 
-            if s_value is not None and r_value is not None and i_min is None and sdd_min is None:
-                # Case: Only S and R values
-                if mic_value >= s_value:
-                    return "S"
-                elif mic_value < s_value:
-                    return "R"
-            elif i_min is not None and i_max is not None:
-                # Case: I (Intermediate)
-                if i_min <= mic_value <= i_max:
-                    return "I"
-                elif mic_value >= s_value:
-                    return "S"
-                elif mic_value < s_value:
-                    return "R"
-            elif sdd_min is not None and sdd_max is not None:
-                # Case: SDD (Susceptible-Dose Dependent)
-                if sdd_min <= mic_value <= sdd_max:
-                    return "SDD"
-                elif mic_value >= s_value:
-                    return "S"
-                elif mic_value < s_value:
-                    return "R"
+            # If there are indications, prompt the user to select one
+            if indications_set:
+                indications_list = sorted(indications_set)  # Sort for consistent display
+                print("Available indications for the given bacteria and antibiotic combination:")
+                for idx, indication in enumerate(indications_list, start=1):
+                    print(f"{idx}: {indication}")
+
+                try:
+                    selected_index = int(input("Enter the number corresponding to the desired indication: "))
+                    if 1 <= selected_index <= len(indications_list):
+                        selected_indication = indications_list[selected_index - 1]
+                        print(f"Selected indication: {selected_indication}")
+                    else:
+                        return "Invalid selection. Please try again."
+                except ValueError:
+                    return "Invalid input. Please enter a number."
+            else:
+                print("No indications found for the specified bacteria and antibiotic combination.")
+
+            # Truncate the MIC value to an integer
+            mic_value = int(mic_value)
+
+            # Perform MIC classification based on thresholds from the first matching row
+            for s_value, r_value, i_min, i_max, sdd_min, sdd_max in thresholds:
+                if s_value is not None and r_value is not None and i_min is None and sdd_min is None:
+                    # Case: Only S and R values
+                    if mic_value >= s_value:
+                        return "S"
+                    elif mic_value < s_value:
+                        return "R"
+                elif i_min is not None and i_max is not None:
+                    # Case: I (Intermediate)
+                    if i_min <= mic_value <= i_max:
+                        return "I"
+                    elif mic_value >= s_value:
+                        return "S"
+                    elif mic_value < s_value:
+                        return "R"
+                elif sdd_min is not None and sdd_max is not None:
+                    # Case: SDD (Susceptible-Dose Dependent)
+                    if sdd_min <= mic_value <= sdd_max:
+                        return "SDD"
+                    elif mic_value >= s_value:
+                        return "S"
+                    elif mic_value < s_value:
+                        return "R"
 
             # Fallback if no classification matches
             return "Unable to classify based on the provided MIC value."

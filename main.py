@@ -13,4 +13,8 @@ db = DB_model(db_info)
 # db.reindex_table()
 
 
-print(db.classify_mic_value("Enterobacterales(excluding Salmonella/Shigella)", "Piperacillin_tazobactam", 23))
+print(db.classify_mic_value("Enterobacterales(excluding Salmonella/Shigella)","Ampicillin", 14.1))
+
+
+
+#S.pseudintermedius or S.schleiferi
