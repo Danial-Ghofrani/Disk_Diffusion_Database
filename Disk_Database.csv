@@ -1,0 +1,314 @@
+id,bacteria_name,antibiotic_name,disk_content,s_value,i_min,i_max,sdd_min,sdd_max,r_value,indications
+1,"Enterobacterales(excluding Salmonella/Shigella)",Ampicillin,10,17,14,16,NULL,NULL,13,
+2,"Enterobacterales(excluding Salmonella/Shigella)",Mecillianam,10,15,12,14,NULL,NULL,11,
+3,"Enterobacterales(excluding Salmonella/Shigella)",Amoxicillin_clavulante,20/10,18,14,17,NULL,NULL,13,
+4,"Enterobacterales(excluding Salmonella/Shigella)",Ampicillin_sulbactam,10/10,15,12,14,NULL,NULL,11,
+5,"Enterobacterales(excluding Salmonella/Shigella)",Ceftolozane_tazobactam,30/10,22,19,21,NULL,NULL,18,
+6,"Enterobacterales(excluding Salmonella/Shigella)",Ceftazidime_avibactam,30/20,21,NULL,NULL,NULL,NULL,20,
+7,"Enterobacterales(excluding Salmonella/Shigella)",Imipenem_relebactam,10/25,25,21,24,NULL,NULL,20,
+8,"Enterobacterales(excluding Salmonella/Shigella)",Meropenem_vaborbactam,20/10,18,15,17,NULL,NULL,14,
+9,"Enterobacterales(excluding Salmonella/Shigella)",Piperacillin_tazobactam,100/10,25,NULL,NULL,21,24,20,
+10,"Enterobacterales(excluding Salmonella/Shigella)",Ticarcillin_clavulante,75/10,20,15,19,NULL,NULL,14,
+11,"Enterobacterales(excluding Salmonella/Shigella)",Cefazolin,30,23,20,22,NULL,NULL,19,
+12,"Enterobacterales(excluding Salmonella/Shigella)",Cefazolin(U),30,15,NULL,NULL,NULL,NULL,14,
+13,"Enterobacterales(excluding Salmonella/Shigella)",Ceftaroline,30,23,20,22,NULL,NULL,19,
+14,"Enterobacterales(excluding Salmonella/Shigella)",Cefepime,30,25,NULL,NULL,19,24,18,
+15,"Enterobacterales(excluding Salmonella/Shigella)",Cefotaxime,30,26,23,25,NULL,NULL,22,
+16,"Enterobacterales(excluding Salmonella/Shigella)",Ceftriaxone,30,23,20,22,NULL,NULL,22,
+17,"Enterobacterales(excluding Salmonella/Shigella)",Cefotetan,30,16,13,15,NULL,NULL,12,
+18,"Enterobacterales(excluding Salmonella/Shigella)",Cefoxitin,30,18,15,17,NULL,NULL,14,
+19,"Enterobacterales(excluding Salmonella/Shigella)",Cefuroxime(parenteral),30,18,15,17,NULL,NULL,14,
+20,"Enterobacterales(excluding Salmonella/Shigella)",Ceftazidime,30,21,18,20,NULL,NULL,17,
+21,"Enterobacterales(excluding Salmonella/Shigella)",Cefamandole,30,18,15,17,NULL,NULL,14,
+22,"Enterobacterales(excluding Salmonella/Shigella)",Cefmetazole,30,16,13,15,NULL,NULL,12,
+23,"Enterobacterales(excluding Salmonella/Shigella)",Cefonicid,30,18,15,17,NULL,NULL,14,
+24,"Enterobacterales(excluding Salmonella/Shigella)",Cefoperazone,75,21,16,20,NULL,NULL,15,
+25,"Enterobacterales(excluding Salmonella/Shigella)",Ceftizoxime,30,25,22,24,NULL,NULL,21,
+26,"Enterobacterales(excluding Salmonella/Shigella)",Moxalactam,30,23,15,22,NULL,NULL,14,
+27,"Enterobacterales(excluding Salmonella/Shigella)",Cefiderocol,30,16,9,15,NULL,NULL,8,
+28,"Enterobacterales(excluding Salmonella/Shigella)",Cefazolin(U),30,15,NULL,NULL,NULL,NULL,14,
+29,"Enterobacterales(excluding Salmonella/Shigella)",Cefuroxime(oral),30,23,15,22,NULL,NULL,14,
+30,"Enterobacterales(excluding Salmonella/Shigella)",Loracarbef,30,18,15,17,NULL,NULL,14,
+31,"Enterobacterales(excluding Salmonella/Shigella)",Cefaclor,30,18,15,17,NULL,NULL,14,
+32,"Enterobacterales(excluding Salmonella/Shigella)",Cefdinir,5,20,17,19,NULL,NULL,16,
+33,"Enterobacterales(excluding Salmonella/Shigella)",Cefixime,5,19,16,18,NULL,NULL,15,
+34,"Enterobacterales(excluding Salmonella/Shigella)",Cefpodoxime,10,21,18,20,NULL,NULL,17,
+35,"Enterobacterales(excluding Salmonella/Shigella)",Cefprozil,30,18,15,17,NULL,NULL,14,
+36,"Enterobacterales(excluding Salmonella/Shigella)",Cefetamet(Inv),10,18,15,17,NULL,NULL,14,
+37,"Enterobacterales(excluding Salmonella/Shigella)","Ceftibuten(U,Inv)",30,21,18,20,NULL,NULL,17,NULL
+38,"Enterobacterales(excluding Salmonella/Shigella)",Aztreonam,30,21,18,20,NULL,NULL,17,NULL
+39,"Enterobacterales(excluding Salmonella/Shigella)",Doripenem,10,23,20,22,NULL,NULL,19,NULL
+40,"Enterobacterales(excluding Salmonella/Shigella)",Ertapenem,10,22,19,21,NULL,NULL,18,NULL
+41,"Enterobacterales(excluding Salmonella/Shigella)",Imipenem,10,23,20,22,NULL,NULL,19,NULL
+42,"Enterobacterales(excluding Salmonella/Shigella)",Meropenem,10,23,20,22,NULL,NULL,19,NULL
+43,"Enterobacterales(excluding Salmonella/Shigella)",Gentamicin,10,18,15,17,NULL,NULL,14,NULL
+44,"Enterobacterales(excluding Salmonella/Shigella)",Tobramysin,10,17,13,16,NULL,NULL,12,NULL
+45,"Enterobacterales(excluding Salmonella/Shigella)",Amikacin,30,20,17,19,NULL,NULL,16,NULL
+46,"Enterobacterales(excluding Salmonella/Shigella)",Plazomicin,30,18,15,17,NULL,NULL,14,NULL
+47,"Enterobacterales(excluding Salmonella/Shigella)",Kanamycin,30,18,14,17,NULL,NULL,13,NULL
+48,"Enterobacterales(excluding Salmonella/Shigella)",Netlimicin,30,15,13,14,NULL,NULL,12,NULL
+49,"Enterobacterales(excluding Salmonella/Shigella)",Streptomycin,10,15,12,14,NULL,NULL,11,NULL
+50,"Enterobacterales(excluding Salmonella/Shigella)",Tetracycline,30,15,12,14,NULL,NULL,11,NULL
+51,"Enterobacterales(excluding Salmonella/Shigella)",Minocycline,30,16,13,15,NULL,NULL,12,NULL
+52,"Enterobacterales(excluding Salmonella/Shigella)",Ciprofloxacin,5,26,22,25,NULL,NULL,21,NULL
+53,"Enterobacterales(excluding Salmonella/Shigella)",Levofloxacin,5,21,17,20,NULL,NULL,16,NULL
+54,"Enterobacterales(excluding Salmonella/Shigella)",Cinoxacin(U),100,19,15,18,NULL,NULL,14,NULL
+55,"Enterobacterales(excluding Salmonella/Shigella)",Enoxacin(U),10,18,15,17,NULL,NULL,14,NULL
+56,"Enterobacterales(excluding Salmonella/Shigella)",Gatifloxacin,5,18,15,17,NULL,NULL,14,NULL
+57,"Enterobacterales(excluding Salmonella/Shigella)",Gemifloxacin,5,20,16,19,NULL,NULL,15,NULL
+58,"Enterobacterales(excluding Salmonella/Shigella)",Grepafloxacin,5,18,15,17,NULL,NULL,14,NULL
+59,"Enterobacterales(excluding Salmonella/Shigella)",Lomefloxacin,10,22,19,21,NULL,NULL,18,NULL
+60,"Enterobacterales(excluding Salmonella/Shigella)",Nalidixic_acid(U),30,19,14,18,NULL,NULL,13,NULL
+61,"Enterobacterales(excluding Salmonella/Shigella)",Norfloxacin(U),10,17,13,16,NULL,NULL,12,NULL
+62,"Enterobacterales(excluding Salmonella/Shigella)",Ofloxacin,5,16,13,15,NULL,NULL,12,NULL
+63,"Enterobacterales(excluding Salmonella/Shigella)",Fleroxacin(Inv),5,19,16,18,NULL,NULL,15,NULL
+64,"Enterobacterales(excluding Salmonella/Shigella)",Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,NULL
+65,"Enterobacterales(excluding Salmonella/Shigella)",Sulfonamides(U),"250 or 300",17,13,16,NULL,NULL,12,NULL
+66,"Enterobacterales(excluding Salmonella/Shigella)",Trimethoprim(U),5,16,11,15,NULL,NULL,10,NULL
+67,"Enterobacterales(excluding Salmonella/Shigella)",Chloramphenicol,30,18,13,17,NULL,NULL,12,NULL
+68,"Enterobacterales(excluding Salmonella/Shigella)",Fosfomycin(U),200,16,13,15,NULL,NULL,12,NULL
+69,"Enterobacterales(excluding Salmonella/Shigella)",Nitrofuration(U),300,17,15,16,NULL,NULL,14,NULL
+70,"Enterobacterales(excluding Salmonella/Shigella)",Doxycycline,30,14,11,13,NULL,NULL,10,NULL
+71,"Salmonella and Shigella spp.",Ampicillin,10,17,14,16,NULL,NULL,13,NULL
+72,"Salmonella and Shigella spp.",Cefotaxime,30,26,23,25,NULL,NULL,22,NULL
+73,"Salmonella and Shigella spp.",Ceftriaxone,30,23,20,22,NULL,NULL,19,NULL
+74,"Salmonella and Shigella spp.",Ertapenem,10,22,19,21,NULL,NULL,18,NULL
+75,"Salmonella and Shigella spp.",Imipenem,10,23,20,22,NULL,NULL,19,NULL
+76,"Salmonella and Shigella spp.",Meropenem,10,23,20,22,NULL,NULL,19,NULL
+77,"Salmonella and Shigella spp.","Azithromycin(Shigella spp. only)",15,16,11,15,NULL,NULL,10,NULL
+78,"Salmonella and Shigella spp.",Tetracycline,30,15,12,14,NULL,NULL,11,NULL
+79,"Salmonella and Shigella spp.",Doxycycline,30,14,11,13,NULL,NULL,10,NULL
+80,"Salmonella and Shigella spp.",Minocycline,30,16,13,15,NULL,NULL,12,NULL
+81,"Salmonella and Shigella spp.","Ciprofloxacin (Salmonella)",5,31,21,30,NULL,NULL,20,NULL
+82,"Salmonella and Shigella spp.",Pefloxacin(Inv)(Salmonella),5,24,NULL,NULL,NULL,NULL,23,NULL
+83,"Salmonella and Shigella spp.",Ciprofloxacin(Shigella),5,26,22,25,NULL,NULL,21,NULL
+84,"Salmonella and Shigella spp.",Levofloxacin(Shigella),5,21,17,20,NULL,NULL,16,NULL
+85,"Salmonella and Shigella spp.",Ofloxacin(Shigella),5,16,13,15,NULL,NULL,12,NULL
+86,"Salmonella and Shigella spp.",Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,NULL
+87,"Salmonella and Shigella spp.",Chloramphenicol,30,18,13,17,NULL,NULL,12,NULL
+88,"Salmonella and Shigella spp.","Azithromycin(S.enterica ser. Typhi)",15,13,NULL,NULL,NULL,NULL,12,NULL
+89,Pseudomonas_aeruginosa,Piperacillin,100,22,18,21,NULL,NULL,17,NULL
+90,Pseudomonas_aeruginosa,Piperacillin_tazobactam,100/10,22,18,21,NULL,NULL,17,NULL
+91,Pseudomonas_aeruginosa,Ceftazidime_avibactam,30/20,21,NULL,NULL,NULL,NULL,20,NULL
+92,Pseudomonas_aeruginosa,Ceftolozane_tazobactam,30/10,21,17,20,NULL,NULL,16,NULL
+93,Pseudomonas_aeruginosa,Imipenem_relebactam,10/25,23,20,22,NULL,NULL,19,NULL
+94,Pseudomonas_aeruginosa,Ticarcillin_clavulante,75/10,24,16,23,NULL,NULL,15,NULL
+95,Pseudomonas_aeruginosa,Ceftazidime,30,18,15,17,NULL,NULL,14,NULL
+96,Pseudomonas_aeruginosa,Cefepime,30,18,15,17,NULL,NULL,14,NULL
+97,Pseudomonas_aeruginosa,Cefiderocol,30,18,13,17,NULL,NULL,12,NULL
+98,Pseudomonas_aeruginosa,Aztreonam,30,22,16,21,NULL,NULL,15,NULL
+99,Pseudomonas_aeruginosa,Doripenem,10,19,16,18,NULL,NULL,15,NULL
+100,Pseudomonas_aeruginosa,Imipenem,10,19,16,18,NULL,NULL,15,NULL
+101,Pseudomonas_aeruginosa,Meropenem,10,19,16,18,NULL,NULL,15,NULL
+102,Pseudomonas_aeruginosa,Tobramycin,10,19,13,18,NULL,NULL,12,NULL
+103,Pseudomonas_aeruginosa,Amikacin(U),30,17,15,16,NULL,NULL,14,NULL
+104,Pseudomonas_aeruginosa,Netlimicin,30,15,13,14,NULL,NULL,12,NULL
+105,Pseudomonas_aeruginosa,Ciprofloxacin,5,25,19,24,NULL,NULL,18,NULL
+106,Pseudomonas_aeruginosa,Levofloxacin,5,22,15,21,NULL,NULL,14,NULL
+107,Pseudomonas_aeruginosa,Lomefloxacin(U),10,22,19,21,NULL,NULL,18,NULL
+108,Pseudomonas_aeruginosa,Norfloxacin(U),10,17,13,16,NULL,NULL,12,NULL
+109,Pseudomonas_aeruginosa,Oflaxocin,5,16,13,15,NULL,NULL,12,NULL
+110,Pseudomonas_aeruginosa,Gatifloxacin,5,18,15,17,NULL,NULL,14,NULL
+111,"Acinetobacter spp.",Piperacillin,100,21,18,20,NULL,NULL,17,NULL
+112,"Acinetobacter spp.",Ampicillin_sulbactam,10/10,15,12,14,NULL,NULL,11,NULL
+113,"Acinetobacter spp.",Piperacillin_tazobactam,100/10,21,18,20,NULL,NULL,17,NULL
+114,"Acinetobacter spp.",Sulbactam_durlobactam,10/10,17,14,16,NULL,NULL,13,NULL
+115,"Acinetobacter spp.",Ticarcillin_clavulante,75/10,20,15,19,NULL,NULL,14,NULL
+116,"Acinetobacter spp.",Ceftazidime,30,18,15,17,NULL,NULL,14,NULL
+117,"Acinetobacter spp.",Cefepime,30,18,15,17,NULL,NULL,14,NULL
+118,"Acinetobacter spp.",Cefotaxime,30,23,15,22,NULL,NULL,14,NULL
+119,"Acinetobacter spp.",Ceftriaxone,30,21,14,20,NULL,NULL,13,NULL
+120,"Acinetobacter spp.",Doripenem,10,18,15,17,NULL,NULL,14,NULL
+121,"Acinetobacter spp.",Imipenem,10,22,19,21,NULL,NULL,18,NULL
+122,"Acinetobacter spp.",Meropenem,10,18,15,17,NULL,NULL,14,NULL
+123,"Acinetobacter spp.",Gentamicin,10,15,13,14,NULL,NULL,12,NULL
+124,"Acinetobacter spp.",Tobramycin,10,15,13,14,NULL,NULL,12,NULL
+125,"Acinetobacter spp.",Amikacin,30,17,15,16,NULL,NULL,14,NULL
+126,"Acinetobacter spp.",Doxycycline,30,13,10,12,NULL,NULL,9,NULL
+127,"Acinetobacter spp.",Minocycline,30,16,13,15,NULL,NULL,12,NULL
+128,"Acinetobacter spp.",Tetracycline(U),30,15,12,14,NULL,NULL,11,NULL
+129,"Acinetobacter spp.",Ciprofloxacin,5,21,16,20,NULL,NULL,15,NULL
+130,"Acinetobacter spp.",Levofloxacin,5,17,14,16,NULL,NULL,13,NULL
+131,"Acinetobacter spp.",Gatifloxacin,5,18,15,17,NULL,NULL,14,NULL
+132,"Acinetobacter spp.",Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,NULL
+133,Stenotrophomonas_maltophilia,Minocycline,30,26,21,25,NULL,NULL,20,NULL
+134,Stenotrophomonas_maltophilia,Levofloxacin,5,17,14,16,NULL,NULL,13,NULL
+135,Stenotrophomonas_maltophilia,Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,NULL
+136,"Staphylococccus spp.",Penicillin,"10 units",29,NULL,NULL,NULL,NULL,28,"All staphylococci"
+137,"Staphylococccus spp.",Oxacillin_cefoxitin,30,22,NULL,NULL,NULL,NULL,21,"S.aureus and S.lugdunensis"
+138,"Staphylococccus spp.",Oxacillin_Oxacillin,1,18,NULL,NULL,NULL,NULL,17,S.epidermidis
+139,"Staphylococccus spp.",Oxacillin_cefoxitin,30,25,NULL,NULL,NULL,NULL,24,S.epidermidis
+140,"Staphylococccus spp.",Oxacillin_Oxacillin,1,18,NULL,NULL,NULL,NULL,17,"S.pseudintermedius and S.schleiferi"
+141,"Staphylococccus spp.",Oxacillin_cefoxitin,30,25,NULL,NULL,NULL,NULL,24,"Staphylococcus spp. Except: S.aureus and S.lugdunensis and S.epidermidis and S.pseudintermedius and S.schleiferi"
+142,"Staphylococccus spp.",Ceftaroline,30,25,NULL,NULL,20,24,19,"S.aureus including MRSA"
+143,"Staphylococccus spp.",Gentamicin,10,15,13,14,NULL,NULL,12,"All staphylococci"
+144,"Staphylococccus spp.",Azithromycin,15,18,14,17,NULL,NULL,13,"All staphylococci"
+145,"Staphylococccus spp.",Clarithromycin,15,18,14,17,NULL,NULL,13,"All staphylococci"
+146,"Staphylococccus spp.",Erythromycin,15,23,14,22,NULL,NULL,13,"All staphylococci"
+147,"Staphylococccus spp.",Dirithromycin,15,19,16,18,NULL,NULL,15,"All staphylococci"
+148,"Staphylococccus spp.",Tetracycline,30,19,15,18,NULL,NULL,14,"All staphylococci"
+149,"Staphylococccus spp.",Doxycycline,30,16,13,15,NULL,NULL,12,"All staphylococci"
+150,"Staphylococccus spp.",Minocycline,30,19,15,18,NULL,NULL,14,"All staphylococci"
+151,"Staphylococccus spp.",Ciprofloxacin,5,21,16,20,NULL,NULL,15,"All staphylococci"
+152,"Staphylococccus spp.",Levofloxacin,5,19,16,18,NULL,NULL,15,"All staphylococci"
+153,"Staphylococccus spp.",Moxifloxacin,5,24,21,23,NULL,NULL,20,"All staphylococci"
+154,"Staphylococccus spp.",Enoxacin(U),10,18,15,17,NULL,NULL,14,"All staphylococci"
+155,"Staphylococccus spp.",Gatifloxacin,5,23,20,22,NULL,NULL,19,"All staphylococci"
+156,"Staphylococccus spp.",Grepafloxacin,5,18,15,17,NULL,NULL,14,"All staphylococci"
+157,"Staphylococccus spp.",Lomefloxacin,10,22,19,21,NULL,NULL,18,"All staphylococci"
+158,"Staphylococccus spp.",Norfloxacin(U),10,17,13,16,NULL,NULL,12,"All staphylococci"
+159,"Staphylococccus spp.",Ofloxacin,5,18,15,17,NULL,NULL,14,"All staphylococci"
+160,"Staphylococccus spp.",Sparfloxacin,5,19,16,18,NULL,NULL,15,"All staphylococci"
+161,"Staphylococccus spp.",Fleroxacin(Inv),5,19,16,18,NULL,NULL,15,"All staphylococci"
+162,"Staphylococccus spp.",Nitrofurantoin(U),300,17,15,16,NULL,NULL,14,"All staphylococci"
+163,"Staphylococccus spp.",Clindamycin,2,21,15,20,NULL,NULL,14,"All staphylococci"
+164,"Staphylococccus spp.",Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,"All staphylococci"
+165,"Staphylococccus spp.",Sulfonamides(U),"250 or 300",17,13,16,NULL,NULL,12,"All staphylococci"
+166,"Staphylococccus spp.",Trimethoprim(U),5,16,11,15,NULL,NULL,10,"All staphylococci"
+167,"Staphylococccus spp.",Chloramphenicol,30,18,13,17,NULL,NULL,12,"All staphylococci"
+168,"Staphylococccus spp.",Rifampin,5,20,17,19,NULL,NULL,16,"All staphylococci"
+169,"Staphylococccus spp.",Quinupristin_dalfopristin,15,19,16,18,NULL,NULL,15,S.aureus
+170,"Staphylococccus spp.",Linezolid,30,26,23,25,NULL,NULL,22,"All staphylococci"
+171,"Staphylococccus spp.",Tedizolid,2,19,16,18,NULL,NULL,15,"S.aureus  including MRSA"
+172,"Enterococcus spp.",Penicillin,"10 units",15,NULL,NULL,NULL,NULL,14,
+173,"Enterococcus spp.",Ampicillin,10,17,NULL,NULL,NULL,NULL,16,NULL
+174,"Enterococcus spp.",Vancomycin,30,17,15,16,NULL,NULL,14,NULL
+175,"Enterococcus spp.",Teicoplanin(Inv),30,14,11,13,NULL,NULL,10,NULL
+176,"Enterococcus spp.",Erythromycin,15,23,14,22,NULL,NULL,13,NULL
+177,"Enterococcus spp.",Tetracycline(U),30,19,15,18,NULL,NULL,14,NULL
+178,"Enterococcus spp.",Doxycycline,30,16,13,15,NULL,NULL,12,NULL
+179,"Enterococcus spp.",Minocycline,30,19,15,18,NULL,NULL,14,NULL
+180,"Enterococcus spp.",Ciprofloxacin(U),5,21,16,20,NULL,NULL,15,NULL
+181,"Enterococcus spp.",Levofloxacin(U),5,17,14,16,NULL,NULL,13,NULL
+182,"Enterococcus spp.",Gatifloxacin,5,18,15,17,NULL,NULL,14,NULL
+183,"Enterococcus spp.",Norfloxacin(U),10,17,13,16,NULL,NULL,12,NULL
+184,"Enterococcus spp.",Nitrofurantoin(U),300,17,15,16,NULL,NULL,14,NULL
+185,"Enterococcus spp.",Rifampin,5,20,17,19,NULL,NULL,16,NULL
+186,"Enterococcus spp.",Fosfomycin(U),200,16,13,15,NULL,NULL,12,NULL
+187,"Enterococcus spp.",Chloramphenicol,30,18,13,17,NULL,NULL,12,NULL
+188,"Enterococcus spp.",Quinupristin_dalfopristin,15,19,16,18,NULL,NULL,15,NULL
+189,"Enterococcus spp.",Linezolid,30,23,21,22,NULL,NULL,20,NULL
+190,"Haemophilus influenzae and Haemophilus parainfluenzae",Ampicillin,10,22,19,21,NULL,NULL,18,NULL
+191,"Haemophilus influenzae and Haemophilus parainfluenzae",Ampicillin_sulbactam,10/10,20,NULL,NULL,NULL,NULL,19,NULL
+192,"Haemophilus influenzae and Haemophilus parainfluenzae",Piperacillin_tazobactam,100/10,21,NULL,NULL,NULL,NULL,NULL,NULL
+193,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefotaxime,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+194,"Haemophilus influenzae and Haemophilus parainfluenzae",Ceftazidime,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+195,"Haemophilus influenzae and Haemophilus parainfluenzae",Ceftriaxone,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+196,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefuroxime,30,20,17,19,NULL,NULL,16,NULL
+197,"Haemophilus influenzae and Haemophilus parainfluenzae",Ceftaroline,30,30,NULL,NULL,NULL,NULL,NULL,NULL
+198,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefonicid,30,20,17,19,NULL,NULL,16,NULL
+199,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefepime,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+200,"Haemophilus influenzae and Haemophilus parainfluenzae",Ceftizoxime,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+201,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefaclor,30,20,17,19,NULL,NULL,16,NULL
+202,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefprozil,30,18,15,17,NULL,NULL,14,NULL
+203,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefdinir,5,20,NULL,NULL,NULL,NULL,NULL,NULL
+204,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefixime,5,21,NULL,NULL,NULL,NULL,NULL,NULL
+205,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefpodoxime,10,21,NULL,NULL,NULL,NULL,NULL,NULL
+206,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefuroxime,30,20,17,19,NULL,NULL,16,NULL
+207,"Haemophilus influenzae and Haemophilus parainfluenzae",Loracarbef,30,19,16,18,NULL,NULL,15,NULL
+208,"Haemophilus influenzae and Haemophilus parainfluenzae",Ceftibuten,30,28,NULL,NULL,NULL,NULL,NULL,NULL
+209,"Haemophilus influenzae and Haemophilus parainfluenzae",Cefetamet(Inv),10,18,15,17,NULL,NULL,14,NULL
+210,"Haemophilus influenzae and Haemophilus parainfluenzae",Aztreonam,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+211,"Haemophilus influenzae and Haemophilus parainfluenzae",Meropenem,10,20,NULL,NULL,NULL,NULL,NULL,NULL
+212,"Haemophilus influenzae and Haemophilus parainfluenzae",Ertapenem,10,19,NULL,NULL,NULL,NULL,NULL,NULL
+213,"Haemophilus influenzae and Haemophilus parainfluenzae",Imipenem,10,16,NULL,NULL,NULL,NULL,NULL,NULL
+214,"Haemophilus influenzae and Haemophilus parainfluenzae",Doripenem,10,16,NULL,NULL,NULL,NULL,NULL,NULL
+215,"Haemophilus influenzae and Haemophilus parainfluenzae",Azithromycin,15,12,NULL,NULL,NULL,NULL,NULL,NULL
+216,"Haemophilus influenzae and Haemophilus parainfluenzae",Clarithromycin,15,13,11,12,NULL,NULL,10,NULL
+217,"Haemophilus influenzae and Haemophilus parainfluenzae",Tetracycline,30,29,26,28,NULL,NULL,25,NULL
+218,"Haemophilus influenzae and Haemophilus parainfluenzae",Ciprofloxacin,5,21,NULL,NULL,NULL,NULL,NULL,NULL
+219,"Haemophilus influenzae and Haemophilus parainfluenzae",Levofloxacin,5,17,NULL,NULL,NULL,NULL,NULL,NULL
+220,"Haemophilus influenzae and Haemophilus parainfluenzae",Moxifloxacin,5,18,NULL,NULL,NULL,NULL,NULL,NULL
+221,"Haemophilus influenzae and Haemophilus parainfluenzae",Gemifloxacin,5,18,NULL,NULL,NULL,NULL,NULL,NULL
+222,"Haemophilus influenzae and Haemophilus parainfluenzae",Gatifloxacin,5,18,NULL,NULL,NULL,NULL,NULL,NULL
+223,"Haemophilus influenzae and Haemophilus parainfluenzae",Grepafloxacin,5,24,NULL,NULL,NULL,NULL,NULL,NULL
+224,"Haemophilus influenzae and Haemophilus parainfluenzae",Lomefloxacin,10,22,NULL,NULL,NULL,NULL,NULL,NULL
+225,"Haemophilus influenzae and Haemophilus parainfluenzae",Ofloxacin,5,16,NULL,NULL,NULL,NULL,NULL,NULL
+226,"Haemophilus influenzae and Haemophilus parainfluenzae",Trovafloxacin,10,22,NULL,NULL,NULL,NULL,NULL,NULL
+227,"Haemophilus influenzae and Haemophilus parainfluenzae",Fleroxacin(Inv),5,19,NULL,NULL,NULL,NULL,NULL,NULL
+228,"Haemophilus influenzae and Haemophilus parainfluenzae",Trimethoprim_sulfamethoxazole,1.25/23.75,16,11,15,NULL,NULL,10,NULL
+229,"Haemophilus influenzae and Haemophilus parainfluenzae",Chloramphenicol,30,29,26,28,NULL,NULL,25,NULL
+230,"Haemophilus influenzae and Haemophilus parainfluenzae",Rifampin,5,20,17,19,NULL,NULL,16,NULL
+231,"Haemophilus influenzae and Haemophilus parainfluenzae",Lefamulin,20,18,NULL,NULL,NULL,NULL,NULL,NULL
+232,"Neisseria gonorrhoeae",Penicillin,"10 units",47,27,46,NULL,NULL,26,NULL
+233,"Neisseria gonorrhoeae",Cefoxitin,30,28,24,27,NULL,NULL,23,NULL
+234,"Neisseria gonorrhoeae",Cefotetan,30,26,20,25,NULL,NULL,19,NULL
+235,"Neisseria gonorrhoeae",Ceftizoxime,30,38,NULL,NULL,NULL,NULL,NULL,NULL
+236,"Neisseria gonorrhoeae",Cefixime,5,31,NULL,NULL,NULL,NULL,NULL,NULL
+237,"Neisseria gonorrhoeae",Cefpodoxime,10,29,NULL,NULL,NULL,NULL,NULL,NULL
+238,"Neisseria gonorrhoeae",Azithromycin,15,30,NULL,NULL,NULL,NULL,NULL,NULL
+239,"Neisseria gonorrhoeae",Tetracycline,30,38,31,37,NULL,NULL,30,NULL
+240,"Neisseria gonorrhoeae",Ciprofloxacin,5,41,28,40,NULL,NULL,27,NULL
+241,"Neisseria gonorrhoeae",Spectinomycin,100,18,15,17,NULL,NULL,14,NULL
+242,"Streptococcus pneumoniae",Penicillin,"1 (oxacillin)",20,NULL,NULL,NULL,NULL,NULL,NULL
+243,"Streptococcus pneumoniae",Ceftaroline(nomeningitis),30,26,NULL,NULL,NULL,NULL,NULL,NULL
+244,"Streptococcus pneumoniae",Vancomycin,30,17,NULL,NULL,NULL,NULL,NULL,NULL
+245,"Streptococcus pneumoniae",Erythromycin,15,21,16,20,NULL,NULL,15,NULL
+246,"Streptococcus pneumoniae",Azithromycin,15,18,14,17,NULL,NULL,13,NULL
+247,"Streptococcus pneumoniae",Clarithromycin,15,21,17,20,NULL,NULL,16,NULL
+248,"Streptococcus pneumoniae",Dirithromycin,15,18,14,17,NULL,NULL,13,NULL
+249,"Streptococcus pneumoniae",Tetracycline,30,28,25,27,NULL,NULL,24,NULL
+250,"Streptococcus pneumoniae",Doxycycline,30,28,25,27,NULL,NULL,24,NULL
+251,"Streptococcus pneumoniae",Gemifloxacin,5,23,20,22,NULL,NULL,19,NULL
+252,"Streptococcus pneumoniae",Levofloxacin,5,17,14,16,NULL,NULL,13,NULL
+253,"Streptococcus pneumoniae",Moxifloxacin,5,18,15,17,NULL,NULL,14,NULL
+254,"Streptococcus pneumoniae",Gatifloxacin,5,21,18,20,NULL,NULL,17,NULL
+255,"Streptococcus pneumoniae",Ofloxacin,5,16,13,15,NULL,NULL,12,NULL
+256,"Streptococcus pneumoniae",Sparfloxacin,5,19,16,18,NULL,NULL,15,NULL
+257,"Streptococcus pneumoniae",Trimethoprim_sulfamethoxazole,1.25/23.75,19,16,18,NULL,NULL,15,NULL
+258,"Streptococcus pneumoniae",Chloramphenicol,30,21,NULL,NULL,NULL,NULL,20,NULL
+259,"Streptococcus pneumoniae",Rifampin,5,19,17,18,NULL,NULL,16,NULL
+260,"Streptococcus pneumoniae",Clindamycin,2,19,16,18,NULL,NULL,15,NULL
+261,"Streptococcus pneumoniae",Quinupristin_dalfopristin,15,19,16,18,NULL,NULL,15,NULL
+262,"Streptococcus pneumoniae",Linezolid,30,21,NULL,NULL,NULL,NULL,NULL,NULL
+263,"Streptococcus pneumoniae",Lefamulin,20,19,NULL,NULL,NULL,NULL,NULL,NULL
+264,"Streptococcus spp. Beta Hemolytic Group","Penicillin ","10 units",24,NULL,NULL,NULL,NULL,NULL,NULL
+265,"Streptococcus spp. Beta Hemolytic Group",Ampicillin,10,24,NULL,NULL,NULL,NULL,NULL,NULL
+266,"Streptococcus spp. Beta Hemolytic Group",Cefepime,30,24,NULL,NULL,NULL,NULL,NULL,NULL
+267,"Streptococcus spp. Beta Hemolytic Group",Cefotaxime,30,24,NULL,NULL,NULL,NULL,NULL,NULL
+268,"Streptococcus spp. Beta Hemolytic Group",Ceftriaxone,30,24,NULL,NULL,NULL,NULL,NULL,NULL
+269,"Streptococcus spp. Beta Hemolytic Group",Vanomycin,30,17,NULL,NULL,NULL,NULL,NULL,NULL
+270,"Streptococcus spp. Beta Hemolytic Group",Erythromycin,15,21,16,20,NULL,NULL,15,NULL
+271,"Streptococcus spp. Beta Hemolytic Group",Azithromycin,15,18,14,17,NULL,NULL,13,NULL
+272,"Streptococcus spp. Beta Hemolytic Group",Clarithromycin,15,21,17,20,NULL,NULL,16,NULL
+273,"Streptococcus spp. Beta Hemolytic Group",Dirithromycin,15,18,14,17,NULL,NULL,13,NULL
+274,"Streptococcus spp. Beta Hemolytic Group",Tetracycline,30,23,19,22,NULL,NULL,18,NULL
+275,"Streptococcus spp. Beta Hemolytic Group",Levofloxacin,5,17,14,16,NULL,NULL,13,NULL
+276,"Streptococcus spp. Beta Hemolytic Group",Gatifloxacin,5,21,18,20,NULL,NULL,17,NULL
+277,"Streptococcus spp. Beta Hemolytic Group",Grepafloxacin,5,19,16,18,NULL,NULL,15,NULL
+278,"Streptococcus spp. Beta Hemolytic Group",Ofloxacin,5,16,13,15,NULL,NULL,12,NULL
+279,"Streptococcus spp. Beta Hemolytic Group",Trovafloxacin,10,19,16,18,NULL,NULL,15,NULL
+280,"Streptococcus spp. Beta Hemolytic Group",Chloramphenicol,30,21,18,20,NULL,NULL,17,NULL
+281,"Streptococcus spp. Beta Hemolytic Group",Clindamycin,2,19,16,18,NULL,NULL,15,NULL
+282,"Streptococcus spp. Beta Hemolytic Group",Quinupristin_dalfopristin,15,19,16,18,NULL,NULL,15,NULL
+283,"Streptococcus spp. Beta Hemolytic Group",Linezolid,30,21,NULL,NULL,NULL,NULL,NULL,NULL
+284,"Streptococcus spp. Beta Hemolytic Group",Tedizolid,2,15,NULL,NULL,NULL,NULL,NULL,NULL
+285,"Streptococcus spp. Beta Hemolytic Group",Ceftaroline,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+286,"Streptococcus spp. Viridans Group",Cefepime,30,24,22,23,NULL,NULL,21,NULL
+287,"Streptococcus spp. Viridans Group",Cefotaxime,30,28,26,27,NULL,NULL,25,NULL
+288,"Streptococcus spp. Viridans Group",Ceftriaxone,30,27,25,26,NULL,NULL,24,NULL
+289,"Streptococcus spp. Viridans Group",Vancomycin,30,17,NULL,NULL,NULL,NULL,NULL,NULL
+290,"Streptococcus spp. Viridans Group",Erythromycin,15,21,16,20,NULL,NULL,15,NULL
+291,"Streptococcus spp. Viridans Group",Azithromycin,15,18,14,17,NULL,NULL,13,NULL
+292,"Streptococcus spp. Viridans Group",Clarithromycin,15,21,17,20,NULL,NULL,16,NULL
+293,"Streptococcus spp. Viridans Group",Dirithromycin,15,18,14,17,NULL,NULL,13,NULL
+294,"Streptococcus spp. Viridans Group",Tetracycline,30,23,19,22,NULL,NULL,18,NULL
+295,"Streptococcus spp. Viridans Group",Levofloxacin,5,17,14,16,NULL,NULL,13,NULL
+296,"Streptococcus spp. Viridans Group",Ofloxacin,5,16,13,15,NULL,NULL,12,NULL
+297,"Streptococcus spp. Viridans Group",Gatifloxacin,5,21,18,20,NULL,NULL,17,NULL
+298,"Streptococcus spp. Viridans Group",Grepafloxacin,5,19,16,18,NULL,NULL,15,NULL
+299,"Streptococcus spp. Viridans Group",Trovafloxacin,10,19,16,18,NULL,NULL,15,NULL
+300,"Streptococcus spp. Viridans Group",Chloramphenicol,30,21,18,20,NULL,NULL,17,NULL
+301,"Streptococcus spp. Viridans Group",Clindamycin,2,19,16,18,NULL,NULL,15,NULL
+302,"Streptococcus spp. Viridans Group",Quinupristin_dalfopristin,15,19,16,18,NULL,NULL,15,NULL
+303,"Streptococcus spp. Viridans Group",Linezolid,30,21,NULL,NULL,NULL,NULL,NULL,NULL
+304,"Streptococcus spp. Viridans Group",Tedizolid,2,18,NULL,NULL,NULL,NULL,NULL,NULL
+305,"Neisseria meningitidis",Cefotaxime,30,34,NULL,NULL,NULL,NULL,NULL,NULL
+306,"Neisseria meningitidis",Ceftriaxone,30,34,NULL,NULL,NULL,NULL,NULL,NULL
+307,"Neisseria meningitidis",Meropenem,10,30,NULL,NULL,NULL,NULL,NULL,NULL
+308,"Neisseria meningitidis",Azithromycin,15,20,NULL,NULL,NULL,NULL,NULL,NULL
+309,"Neisseria meningitidis",Minocycline,30,26,NULL,NULL,NULL,NULL,NULL,NULL
+310,"Neisseria meningitidis",Ciprofloxacin,5,35,NULL,33,34,NULL,32,NULL
+311,"Neisseria meningitidis",Trimethoprim_sulfamethoxazole,1.25/23.75,30,NULL,26,29,NULL,25,NULL
+312,"Neisseria meningitidis",Chloramphenicol,30,26,NULL,20,25,NULL,19,NULL
+313,"Neisseria meningitidis",Rifampin,5,25,NULL,20,24,NULL,19,NULL
