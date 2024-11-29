@@ -68,7 +68,11 @@ class DB_model:
             results = self.cursor.fetchall()
 
             if not results:
-                return "No data found for the specified bacteria and antibiotic combination."
+                print("No data found for the specified bacteria and antibiotic combination in the CLSI's database.")
+                add_new = input("Would you like to add a new entry to the database? (yes/no): ").strip().lower()
+                if add_new in ['yes', 'y']:
+                    self.add_new_entry(bacteria_name, antibiotic_name)
+                return "Process terminated as no data was found and/or added."
 
             # Collect all unique indications from matching rows
             indications_set = set()
@@ -134,6 +138,42 @@ class DB_model:
             return None
         finally:
             self.disconnect()
+
+    def add_new_entry(self, bacteria_name, antibiotic_name):
+        """Prompt the user to add a new row to the database."""
+        try:
+            print("Adding a new entry to the database.")
+            s_value = input("Enter the S value (or press Enter to leave it empty): ").strip()
+            r_value = input("Enter the R value (or press Enter to leave it empty): ").strip()
+            i_min = input("Enter the I minimum value (or press Enter to leave it empty): ").strip()
+            i_max = input("Enter the I maximum value (or press Enter to leave it empty): ").strip()
+            sdd_min = input("Enter the SDD minimum value (or press Enter to leave it empty): ").strip()
+            sdd_max = input("Enter the SDD maximum value (or press Enter to leave it empty): ").strip()
+            indications = input("Enter indications (comma-separated, or leave empty if none): ").strip()
+
+            # Handle empty inputs as NULL values for the database
+            s_value = float(s_value) if s_value else None
+            r_value = float(r_value) if r_value else None
+            i_min = float(i_min) if i_min else None
+            i_max = float(i_max) if i_max else None
+            sdd_min = float(sdd_min) if sdd_min else None
+            sdd_max = float(sdd_max) if sdd_max else None
+            indications = indications if indications else None
+
+            # Insert the new row into the database
+            query = """
+            INSERT INTO resistance_thresholds 
+            (bacteria_name, antibiotic_name, s_value, r_value, i_min, i_max, sdd_min, sdd_max, indications)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
+            """
+            self.cursor.execute(query, (
+            bacteria_name, antibiotic_name, s_value, r_value, i_min, i_max, sdd_min, sdd_max, indications))
+            self.connection.commit()
+            print("New entry added successfully!")
+        except mysql.connector.Error as err:
+            print(f"Error adding new entry: {err}")
+        except ValueError as err:
+            print(f"Invalid input: {err}")
 
     def insert_resistance_threshold(self, bacteria_name, antibiotic_name, disk_content, s_value,
                                     i_min, i_max, sdd_min, sdd_max, r_value, indications):
