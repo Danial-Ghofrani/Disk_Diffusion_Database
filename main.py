@@ -9,8 +9,8 @@ db_info = {
 
 db = DB_model(db_info)
 
-db.insert_data_interactive()
+# db.insert_data_interactive()
+# db.reindex_table()
 
 
-
-# print(db.classify_mic_value("Salmonella", "Ampicillin", 11))
+print(db.classify_mic_value("Enterobacterales(excluding Salmonella/Shigella)", "Piperacillin_tazobactam", 23))
