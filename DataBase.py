@@ -50,11 +50,13 @@ class DB_model:
             self.mydb.close()
         print("Disconnected from the database.")
 
-
     def classify_mic_value(self, bacteria_name, antibiotic_name, mic_value):
         self.connect()
 
         try:
+            # Truncate the MIC value to an integer
+            mic_value = int(mic_value)
+
             query = """
             SELECT 
                 s_value, r_value, 
@@ -69,9 +71,7 @@ class DB_model:
             if not result:
                 return "No data found for the specified bacteria and antibiotic combination."
 
-
             s_value, r_value, i_min, i_max, sdd_min, sdd_max = result
-
 
             if s_value is not None and r_value is not None and i_min is None and sdd_min is None:
                 # Case: Only S and R values
