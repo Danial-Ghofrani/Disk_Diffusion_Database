@@ -86,7 +86,7 @@ class DB_model:
 
             # If there are indications, prompt the user to select one
             if indications_set:
-                indications_list = sorted(indications_set)  # Sort for consistent display
+                indications_list = sorted(indications_set)
                 print("Available indications for the given bacteria and antibiotic combination:")
                 for idx, indication in enumerate(indications_list, start=1):
                     print(f"{idx}: {indication}")
@@ -103,7 +103,7 @@ class DB_model:
             else:
                 print("No indications found for the specified bacteria and antibiotic combination.")
 
-            # Truncate the MIC value to an integer
+
             mic_value = int(mic_value)
 
             # Perform MIC classification based on thresholds from the first matching row
