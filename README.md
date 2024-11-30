@@ -1,6 +1,6 @@
 # Antibiotic Resistance Database Management System  
 
-This repository contains a Python-based database management system designed to handle antibiotic resistance thresholds, inspired by the **Clinical and Laboratory Standards Institute (CLSI)** guidelines. It leverages **MySQL** for storing and querying data on bacteria, antibiotics, and their associated resistance thresholds (Susceptible, Intermediate, Resistant, and Susceptible-Dose Dependent values).  
+This repository contains a Python-based database management system designed to handle disk diffusion test antibiotic resistance thresholds, inspired by the **Clinical and Laboratory Standards Institute (CLSI)** guidelines. It leverages **MySQL** for storing and querying data on bacteria, antibiotics, and their associated resistance thresholds (Susceptible, Intermediate, Resistant, and Susceptible-Dose Dependent values).  
 
 ---
 
